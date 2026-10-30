@@ -1,0 +1,27 @@
+Target APK supplied by user: Edge_152.0.4191.65.apk
+Target package: com.microsoft.emmx
+
+Strings observed in the supplied APK DEX files (static string scan only; not proof of a callable method):
+- org.chromium.chrome.browser.ChromeTabbedActivity
+- org.chromium.chrome.browser.tabmodel.TabModel
+- org.chromium.chrome.browser.ui.extensions.ExtensionsMenuBridge
+- com.microsoft.edge.extensions.ExtensionDialogManager
+- org.chromium.components.browser_ui.widget.PromoDialogLayout
+- DefaultBrowserPromo
+- EducationalTipDefaultBrowserPromoCard
+- edge-topsite://extensions_manager/
+- extensions_menu_main_page_discover_extensions
+- extensions_menu_manage_extensions_button
+- extensions_menu_button_pinning_toggle
+- edge_rewards_referral_invite_entry
+- edge_rewards_referral_campaign_title
+- edge_rewards_campaign_sign_in_btn_text
+- edge_extension_general_campaign_layout
+- edge_extension_specific_campaign_layout
+- extension_tampermonkey_campaign_dialog
+
+Important limitations:
+- This is a string/resource-name scan, not a DEX decompilation or method-signature verification.
+- The extension quick-sheet entry point and exact bottom-toolbar button ID are not confirmed yet.
+- Promo blocking uses a conservative dialog-text heuristic and should be validated on-device.
+- Smart back handling uses runtime reflection against Chromium TabModel/WebContents APIs and includes diagnostic logs.

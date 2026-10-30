@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:allowBackup="false"
+        android:label="EdgeEnhance"
+        android:supportsRtl="true">
+        <meta-data android:name="xposedmodule" android:value="true" />
+        <meta-data android:name="xposeddescription" android:value="Edge Android enhancement: promo filtering, smart back/tab handling, and long-press extensions panel (experimental adapter)." />
+        <meta-data android:name="xposedminversion" android:value="82" />
+    </application>
+</manifest>
