@@ -1,10 +1,33 @@
+
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="28" />
+
     <application
         android:allowBackup="false"
         android:label="EdgeEnhance"
-        android:supportsRtl="true">
-        <meta-data android:name="xposedmodule" android:value="true" />
-        <meta-data android:name="xposeddescription" android:value="Edge Android enhancement: promo filtering, smart back/tab handling, and long-press extensions panel (experimental adapter)." />
-        <meta-data android:name="xposedminversion" android:value="82" />
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Material.Light">
+
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+
+        <meta-data
+            android:name="xposeddescription"
+            android:value="Microsoft Edge enhancement module" />
+
+        <meta-data
+            android:name="xposedminversion"
+            android:value="82" />
+
+        <meta-data
+            android:name="xposedscope"
+            android:value="com.microsoft.emmx" />
+
     </application>
+
 </manifest>
