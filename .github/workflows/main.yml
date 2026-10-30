@@ -35,11 +35,19 @@ jobs:
         run: |
           sdkmanager --install "platforms;android-35" "build-tools;35.0.0"
 
-      - name: Grant execute permission
-        run: chmod +x ./gradlew
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+
+      - name: Check project files
+        run: |
+          echo "Project files:"
+          ls -la
+          find . -maxdepth 3 \( -name "build.gradle" -o -name "build.gradle.kts" -o -name "settings.gradle" -o -name "settings.gradle.kts" \)
 
       - name: Build APK
-        run: ./gradlew assembleDebug --stacktrace
+        run: gradle assembleDebug --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
